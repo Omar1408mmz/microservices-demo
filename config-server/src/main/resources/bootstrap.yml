@@ -5,8 +5,14 @@ spring:
     config:
       server:
         git:
-        uri: https://github.com/Omar1408mmz/spring-cloud-config-server-repository
-        username: Omar1408mmz
-        password: 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
-        clone-on-start: true
+          uri: https://github.com/Omar1408mmz/spring-cloud-config-server-repository
+          username: Omar1408mmz
+          password: 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
+          clone-on-start: true
+          bootstrap: true
+          default-label: master
     fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: springCloud_Pwd!
